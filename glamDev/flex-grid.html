@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_Grid</title>
+
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <link rel="stylesheet" href="css/repeated.css">
+    <script src="https://kit.fontawesome.com/c40fd590a1.js" crossorigin="anonymous"></script>
+
+  
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script type="text/javascript" src="js/flex-grid.js"></script> 
+</head>
+<body>
+    <header class="">
+        <ul class="">
+            <li><a href="">로그인</a></li>
+            <li><a href="">이용안내</a></li>
+            <li><a href="">갤러리</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">검색 <i class="fas fa-search"></i></a></li>
+
+        </ul>
+    </header>
+
+<!-- 티켓 랜딩 -->    
+    <ul class="tickets">
+        <li class="backRoom"></li>
+        <li class="shadow"></li>
+        <li class="center_ticket"></li>
+        <li class="get_started"> <b>가상 갤러리 글램입니다.</b> <a href="">시작하기</a></li>
+    </ul>
+<!-- 티켓 랜딩 --> 
+    <ul class="overView flex">
+        <li></li>
+        <li>꾸미기</li>
+    </ul>    
+<!--패럴랙스-->    
+    <ul class="parallax absolute_parent none">
+        <li class=""></li>
+        <li class="logobigger"></li>
+        <li class="left02"></li>
+        <li class="right02"></li>
+        <li class="left01"></li>
+        <li class="right01"></li>
+    </ul>
+
+    <ul class="not-shown flex none">
+        <li><img src="img/numberTest/1.png" alt="" class=""></li>
+        <li><img src="img/numberTest/2.png" alt=""></li>
+        <li><img src="img/numberTest/3.png" alt=""></li>
+        <li><img src="img/numberTest/4.png" alt=""></li>
+        <li><img src="img/numberTest/5.png" alt=""></li>
+        <li><img src="img/numberTest/6.png" alt=""></li>
+        <li><img src="img/numberTest/7.png" alt=""></li>
+        <li><img src="img/numberTest/8.png" alt=""></li>
+        <li><img src="img/numberTest/9.png" alt=""></li>
+    </ul>
+    <hr>
+    <h3>Flex</h3>
+    <ul class="container flex ">
+        <li><img src="img/numberTest/1.png" alt=""></li>
+        <li><img src="img/numberTest/2.png" alt=""></li>
+        <li><img src="img/numberTest/3.png" alt=""></li>
+        <li><img src="img/numberTest/4.png" alt=""></li>
+        <li><img src="img/numberTest/5.png" alt=""></li>
+    </ul>
+    
+    <h3>Grid</h3>
+    <ul class="container grid horizontal ">
+        <li><img src="img/numberTest/6.png" alt=""></li>
+        <li><img src="img/numberTest/7.png" alt=""></li>
+        <li><img src="img/numberTest/8.png" alt=""></li>
+        <li><img src="img/numberTest/9.png" alt=""></li>
+        <li><img src="img/numberTest/0.png" alt=""></li>
+        <li><img src="img/numberTest/6.png" alt=""></li>
+    </ul>
+    
+    <h3>Grid 2</h3>
+    <ul class="container grid vertical none">
+        <li><img src="img/numberTest/1.png" alt=""></li>
+        <li><img src="img/numberTest/2.png" alt=""></li>
+        <li><img src="img/numberTest/3.png" alt=""></li>
+        <li><img src="img/numberTest/4.png" alt=""></li>
+        <li><img src="img/numberTest/5.png" alt=""></li>
+        <li><img src="img/numberTest/6.png" alt=""></li>
+        <li><img src="img/numberTest/7.png" alt=""></li>
+        <li><img src="img/numberTest/8.png" alt=""></li>
+        <li><img src="img/numberTest/9.png" alt=""></li>
+        <li><img src="img/numberTest/0.png" alt=""></li>
+    </ul>
+
+    
+    <p>
+        FLEX
+        .container
+        display:flex;
+        Flex-wrap: wrap;
+        Flex-direction: column;
+        Justify-content: flex-start;
+        Flex-start; 왼쪽 정렬
+        Flex-end; 오른쪽 정렬
+        Center;
+        Space-between;
+        Space-around; - 양끝 여백
+        Align-items: stretch; 기본값
+        Flex-start: 위로
+        Flex-end: 아래로
+        Center;
+        
+        Flex-wrap: warp인 상태
+        Align-content:space-around;
+        
+        .item{
+        Flex-grow:1; - 여백을 나눠 갖는다. 실제 박스 크기는 아니다.
+        Flex-basis:0; - 기본값은 auto; 박스 크기가 0으로 시작
+        Flex-shrink:
+        Flex:1; - 넣으면 계속 늘어난다.
+        Align-self: flex-start;
+        Order: 
+        }
+        
+        .item:nth-child(odd{
+        }
+        
+        
+        Grid
+        .container{
+        Display: grid;
+        Grid-tempelete-columns: 40% 60%;
+        Grid-template-columns : 4fr 6fr;
+        Grid-gap : 1 rem;
+        Grid-template-column: repeat(3, 1fr);
+        Grid-template-column: 200px 1fr;
+        Grid-auto-rows: minmax(300px,auto); - 최소 높이가 고정되고 늘어난다..
+        Grid-auto-rows: minmax(10em,auto);
+        Justify-items: start;
+        }
+        
+        .item:nth-child(){
+        Justify-self:start;
+        align-self:center;
+        grid-column:1/4; 1~4까지 확장
+        Grid-row    : 2/4;
+        }
+
+    </p>
+</body>
+</html>
