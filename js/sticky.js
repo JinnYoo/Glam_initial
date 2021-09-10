@@ -14,8 +14,7 @@ $(window).scroll(function(){
 
     if(wScroll>$('#sec02').offset().top-300){
         $('#sec02>span').addClass("is-showing");
-	    $('#sec02>span').removeClass("is-showing");
-        $('.navBar>li:nth-child(2)>a').addClass('bg-white');
+	    $('#sec02>span').removeClass(".is-showing");
     }
     if(wScroll>$('#sec03').offset().top-300){
         $('#sec03>span').addClass("is-showing");
