@@ -1,0 +1,84 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+/*--dashBoard CSS
+
+iframe{
+    padding: 0px !important;
+    margin: 0px !important;
+    display: block;
+
+}
+body, html{
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+embed{
+  width: 100vw;
+  padding:0px !important;
+  height: 100vh;
+
+}
+/*----고정 메뉴----*/    
+
+embed#navBars{
+  background-color: ;
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  overflow-y: hidden ;
+  width: 100vw;
+  height: 100vh;
+  
+}
+/*----대시보드----*/
+
+#dashBoard_lists{
+    position: relative;
+    padding-left:200px;
+    padding-top:100px;
+   
+  }  
+    #dashBoard_lists{
+      
+    }
+      #dashBoard_lists>div{
+        min-height: 500px;
+      }
+      #dashBoard_lists > div:nth-child(2n){
+        background:rgba(0, 0, 0, 0.1);
+      }
+
+      /*---- 플렉스 박스 내용 ----*/      
+
+      #dashBoard_lists>div>h3{
+        padding: 30px;
+        border-bottom: 2px gray solid;
+        margin-bottom: 20px;
+
+      }
+
+/*---- 플렉스 박스 내용 ----*/      
+
+    .flexBox{
+        display: flex;
+    }
+        .flexBox>li{
+            width: 30%;
+            border: 10px solid  gray;
+        }
+    #dashBoard_lists>div{
+        position: relative;
+    }    
+    #dashBoard_lists>div>button{
+        position: absolute;
+        display: block;
+        padding:20px;
+        right: 50px;
+        bottom: 50px;
+        background:;
+    }    

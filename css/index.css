@@ -1,0 +1,86 @@
+/*index.css*/
+*{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 0px;
+	margin: 0px;
+	list-style: none !important;
+	text-align: center;
+}
+
+h2{
+    padding:20px;
+    border-bottom: 2px solid black;
+    margin: 20px auto;
+    max-width: 848px;
+}
+/*--Web Demo--*/
+    section{
+        padding: ;
+        display: flex;
+        justify-content: center;
+    }
+#pages{
+    max-width: 848px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    border: blue 0px solid;
+    box-sizing: content-box;
+    background: ;
+    flex-grow: 1;
+}
+#pages>li{
+    border: black 4px solid;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+*:hover{
+    transition:ease-in-out 0.5s;
+}
+
+
+/*-갤러리 (내가 쓴것)-*/
+
+
+
+#galleryWrap{
+  display: inline-block;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+	#galleryWrap>ul{
+        
+		columns: 4;
+		border: 0px green solid;
+		margin: 0px !important;
+	}
+
+		#galleryWrap>ul>li{
+			width: 100%;
+			position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 0px blue solid;
+		}
+			#galleryWrap>ul>li>a{
+				width: 100%;
+		}
+			#galleryWrap>ul>li>p{
+				position: absolute;
+				background: rgba(0, 0, 0, 0.4);
+				z-index: 2;
+				bottom: 4px;
+				width: 100%;
+				padding: 10px 0px;
+				color: white;
+				text-align: center;
+			}
+            #galleryWrap>ul>li:hover p{
+            transform:scale(1.1);
+            background: black;
+            transition:ease-in-out 0.5s;
+            }
