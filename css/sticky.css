@@ -26,10 +26,14 @@ nav{
     width: 100vw;
     background: rgba(0,0,0,0.2);
     margin-top: -2px;
+    padding: 5px;
+    display: flex;
+        justify-content:space-between;
 }
     nav>ul{
         display: flex;
-        justify-content:flex-end;
+        align-items: center;
+        margin-right: 50px;
     }
         nav>ul>li{
             margin: 5px 20px;
@@ -41,12 +45,13 @@ nav{
 aside{
     position: fixed;
     z-index: 10;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0);
     height: 100vh;
     display: flex;
     flex-direction: column;
 
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
    
 }
 aside>*{
@@ -105,36 +110,36 @@ ul.sticky{
     }
 
     ul.sticky>li:nth-child(1){
-        background: url(../img/Sticky/sticky_01.png) center center;
+        background: url(../img/Sticky/sticky_01.jpg) center center;
         background-size: cover;
         margin-top: -5px;
     }
     ul.sticky>li:nth-child(2){
-        background: url(../img/Sticky/sticky_02.png) center center;
+        background: url(../img/Sticky/sticky_02.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(3){
-        background: url(../img/Sticky/sticky_03.png) center center;
+        background: url(../img/Sticky/sticky_03.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(4){
-        background: url(../img/Sticky/sticky_04.png) center center;
+        background: url(../img/Sticky/sticky_04.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(5){
-        background: url(../img/Sticky/sticky_05.png) center center;
+        background: url(../img/Sticky/sticky_05.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(6){
-        background: url(../img/Sticky/sticky_06.png) center center;
+        background: url(../img/Sticky/sticky_06.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(7){
-        background: url(../img/Sticky/sticky_07.png) center center;
+        background: url(../img/Sticky/sticky_01.jpg) center center;
         background-size: cover;
     }
     ul.sticky>li:nth-child(8){
-        background: url(../img/Sticky/sticky_08.png) center center;
+        background: url(../img/Sticky/sticky_08.jpg) center center;
         background-size: cover;
     }
         ul.sticky>li>span{
@@ -156,6 +161,7 @@ ul.sticky{
         ul.sticky>li:nth-child(1)>span{
             background: url(../img/Sticky/sticky_01-1.png) center center;
             background-size: cover;
+            
             
         }
         ul.sticky>li:nth-child(2)>span{
@@ -188,5 +194,7 @@ ul.sticky{
         }
 
 footer{
-    min-height: 500px;
+    min-height: 100px;
+    text-align: center;
+    background: black;
 }        
